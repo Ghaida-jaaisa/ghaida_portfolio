@@ -4,8 +4,8 @@ export const portfolioContent: PortfolioContent = {
   owner: {
     name: 'Ghaida',
     fullName: "Ghaida Ja'aysah",
-    email: 'hello@ghaida.dev',
-    role: 'Computer Systems Engineer · Front-End Developer',
+    email: 'ghaidajaaysah@gmail.com',
+    role: 'Computer Systems Engineer · Software Engineer',
   },
   navItems: ['work', 'playground', 'path', 'about'],
   heroWords: ['interfaces', 'experiences', 'ideas', 'solutions'],
@@ -136,11 +136,17 @@ export const portfolioContent: PortfolioContent = {
   defaultToolDescription: 'A tool I use to turn thoughtful ideas into useful digital experiences.',
   // Drop certificate images in /public/certificates and point `image` at them.
   certificates: [
-    { title: 'Front-End Development', issuer: 'Meta', date: '2025', image: '/placeholder.jpg' },
-    { title: 'React & Modern JavaScript', issuer: 'Coursera', date: '2025', image: '/placeholder.jpg' },
-    { title: 'Computer Systems Engineering', issuer: 'University', date: '2025', image: '/placeholder.jpg' },
-    { title: 'AI for Education', issuer: 'Google', date: '2025', image: '/placeholder.jpg' },
-    { title: 'Web Design & UX', issuer: 'Udemy', date: '2025', image: '/placeholder.jpg' },
+    { title: 'Front-End Development', issuer: 'Udacity', date: '2025', image: '/certificate/frontend-udacity.png' },
+    { title: 'Code2Career', issuer: 'Gaza Sky Geeks', date: '2025', image: '/certificate/code2career.jpg' },
+    { title: 'AI Programming with Python and TensorFlow', issuer: 'Udacity', date: '2026', image: '/certificate/ai-udacity.png' },
+    { title: 'Database Security (with Oracle)', issuer: 'Gaza Sky Geeks', date: '2025', image: '/certificate/dbsecurity-gsg.jpg' },
+    { title: 'Firebase', issuer: 'CODE ACADEMY', date: '2025', image: '/certificate/firebase.jpg' },
+    { title: 'Web Development', issuer: 'sololearn', date: '2024', image: '/certificate/web-development.JPG' },
+    { title: 'Job Ready English', issuer: 'Gaza Sky Geeks', date: '2025', image: '/certificate/jobReadyEnglish.jpg' },
+    { title: 'Front End Development', issuer: 'Knowledge Academy', date: '2024', image: '/certificate/front-knowledge.jpeg' },
+    { title: 'Git & Github', issuer: 'Microsoft Learn Student Ambassador', date: '2024', image: '/certificate/git.JPG' },
+    // { title: 'Front End', issuer: 'EXALT', date: '2025', image: 'placeholder.jpg' },
+    // { title: 'Datacamp', issuer: 'Gaza Sky Geeks', date: '2025', image: 'placeholder.jpg' },
   ],
   currently: [
     { label: 'Building', value: 'New ideas' },
@@ -148,7 +154,7 @@ export const portfolioContent: PortfolioContent = {
     { label: 'Exploring', value: 'Better systems' },
   ],
   socials: [
-    { label: 'GitHub', href: 'https://github.com' },
-    { label: 'LinkedIn', href: 'https://linkedin.com' },
+    { label: 'GitHub', href: 'https://github.com/ghaida-jaaisa' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ghaida-jaaisa/' },
   ],
 }

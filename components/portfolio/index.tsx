@@ -3,7 +3,7 @@ import { AboutSection } from './about-section'
 import { CertificatesSection } from './certificates-section'
 import { ContactFooter } from './contact-footer'
 import { HeroSection } from './hero-section'
-import { JourneySection } from './journey-section'
+import { PathSection } from './path-section'
 import { PlaygroundSection } from './playground-section'
 import { SiteHeader } from './site-header'
 import { ThinkingSection } from './thinking-section'
@@ -22,11 +22,11 @@ export default function Portfolio({ content }: PortfolioProps) {
       <SiteHeader brand={owner.name} email={owner.email} navItems={content.navItems} />
       <HeroSection role={owner.role} words={content.heroWords} />
       <WorkSection projects={content.projects} />
-      <JourneySection milestones={content.milestones} />
       <PlaygroundSection cards={content.playground} />
+      <PathSection entries={content.path} education={content.education} />
       <ThinkingSection steps={content.thinkingSteps} />
       <ToolboxSection tools={content.tools} defaultTool={content.defaultTool} fallbackDescription={content.defaultToolDescription} />
-      <CertificatesSection certificates={content.certificates} ownerName={owner.fullName} />
+      <CertificatesSection certificates={content.certificates} />
       <AboutSection name={owner.name} focus={content.currently} />
       <ContactFooter email={owner.email} ownerName={owner.fullName} socials={content.socials} />
     </main>

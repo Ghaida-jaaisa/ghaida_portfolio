@@ -1,5 +1,6 @@
 import Portfolio from '@/components/portfolio'
+import { portfolioContent } from '@/lib/portfolio/content'
 
 export default function Page() {
-  return <Portfolio />
+  return <Portfolio content={portfolioContent} />
 }

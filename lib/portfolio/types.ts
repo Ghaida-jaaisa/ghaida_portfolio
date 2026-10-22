@@ -84,4 +84,5 @@ export type PortfolioContent = {
   certificates: Certificate[]
   currently: FocusItem[]
   socials: SocialLink[]
+  qoutes: string[]
 }

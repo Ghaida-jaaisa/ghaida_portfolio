@@ -253,6 +253,14 @@ projects: [
     demoUrl: "https://ghaida-jaaisa.github.io/GitHub-Profile-Viewer/",
   },
 ],
+qoutes: [
+    "Stay curious.",
+    "Progress over perfection.",
+    "Mistakes are part of learning.",
+    "Understand, don't just memorize.",
+    "Consistency beats motivation.",
+    "There is always more to learn.",
+  ],
 
   path: [
     {
@@ -351,7 +359,7 @@ projects: [
     degree: 'Computer Systems Engineering',
     period: '2021 — 2026',
     status: 'Graduated · 2026',
-    gpa: '3.62',
+    gpa: '3.61',
     description: 'Five years of engineering, software, systems, projects, deadlines, debugging, and learning how things work beneath the interface.',
   },
   playground: [

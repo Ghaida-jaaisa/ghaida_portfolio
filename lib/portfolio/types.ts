@@ -1,4 +1,5 @@
-export type Project = {
+
+export interface Project {
   number: string
   title: string
   type: string
@@ -6,7 +7,12 @@ export type Project = {
   text: string
   stack: string
   tone: string
+  category: string
+  featured?: boolean
+  githubUrl?: string
+  demoUrl?: string
 }
+
 
 export type PathCategory = 'experience' | 'program' | 'training'
 
@@ -66,6 +72,7 @@ export type PortfolioContent = {
   owner: { name: string; fullName: string; email: string; role: string }
   navItems: string[]
   heroWords: string[]
+  categories: string[]
   projects: Project[]
   path: PathEntry[]
   education: Education

@@ -21,7 +21,10 @@ export default function Portfolio({ content }: PortfolioProps) {
     <main className="min-h-screen overflow-hidden bg-[#F0E8CD] text-[#434F03]">
       <SiteHeader brand={owner.name} email={owner.email} navItems={content.navItems} />
       <HeroSection role={owner.role} words={content.heroWords} />
-      <WorkSection projects={content.projects} />
+      <WorkSection
+  projects={content.projects}
+  categories={content.categories}
+/>
       <PlaygroundSection cards={content.playground} />
       <PathSection entries={content.path} education={content.education} />
       <ThinkingSection steps={content.thinkingSteps} />

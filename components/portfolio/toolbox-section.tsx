@@ -4,26 +4,20 @@ import { useState } from "react";
 import type { Tool } from "@/lib/portfolio/types";
 import { cn } from "@/lib/utils";
 import { SectionLabel, SectionTitle } from "./primitives";
-import {
-  SiTypescript,
-  SiNodedotjs,
-  SiTailwindcss,
-  SiBootstrap,
-  SiSass,
-  SiFirebase,
-  SiPostgresql,
-  SiDocker,
-} from "react-icons/si";
+
 
 const extraTechs = [
-  { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-  { name: 'Node.js', icon: SiNodedotjs, color: '#5FA04E' },
-  { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-  { name: 'Bootstrap', icon: SiBootstrap, color: '#7952B3' },
-  { name: 'Sass', icon: SiSass, color: '#CC6699' },
-  { name: 'Firebase', icon: SiFirebase, color: '#DD2C00' },
-  { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
-  { name: 'Docker', icon: SiDocker, color: '#2496ED' },
+  { name: 'TypeScript', path: 'typescript.svg' },
+  { name: 'Postman', path: 'postman.svg' },
+  { name: '.NET', path: 'dotnet.svg' },
+  { name: 'Flutter', path: 'flutter.svg' },
+  { name: 'Firebase', path: 'firebase.svg' },
+  { name: 'Git', path: 'git.svg' },
+  { name: 'Docker', path: 'docker.svg' },
+  { name: 'Figma', path: 'figma.svg' },
+  { name: 'Python', path: 'python.svg' },
+  { name: 'Redux', path: 'redux.svg' },
+  { name: 'MySQL', path: 'mysql.svg' },
 ]
 
 type ToolboxSectionProps = {
@@ -41,7 +35,7 @@ export function ToolboxSection({
   const selectedTool = tools.find((tool) => tool.name === selected);
 
   return (
-    <section id="toolbox" className="px-6 py-28 md:px-24 md:py-36">
+    <section id="skills" className="px-6 py-28 md:px-24 md:py-36">
       <SectionLabel index="05" className="mb-10 text-[#6A4951]">
         My toolbox
       </SectionLabel>
@@ -53,7 +47,7 @@ export function ToolboxSection({
           emphasisClassName="text-[#6A4951]"
         />
         <div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-5">
             {tools.map((tool) => (
               <button
                 key={tool.name}
@@ -70,34 +64,52 @@ export function ToolboxSection({
               </button>
             ))}
           </div>
-          <div className="mt-10 overflow-hidden border-t border-[#574830]/25 pt-6">
-            <div className="flex w-max animate-[marquee_25s_linear_infinite] gap-12 hover:[animation-play-state:paused]">
-              {[...extraTechs, ...extraTechs].map((tech, index) => {
-                const Icon = tech.icon;
+          <div className="mt-10 overflow-hidden border-t border-[#574830]/25 pt-6 space-y-6">
+              {/* Right to Left */}
+              <div className="overflow-hidden">
+                <div className="flex w-max animate-[marquee_25s_linear_infinite] hover:[animation-play-state:paused]">
+                  {[...extraTechs, ...extraTechs].map((tech, index) => (
+                    <div
+                      key={`rtl-${tech.name}-${index}`}
+                      className="group flex shrink-0 items-center gap-3 px-6"
+                    >
+                      <img
+                        src={`/images/tech-stack/${tech.path}`}
+                        alt={tech.name}
+                        className="h-[30px] w-[30px] object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
+                      />
+                      <span className="font-sans text-xs uppercase tracking-wider text-[#574830]/70">
+                        {tech.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-                return (
-                  <div
-                    key={`${tech.name}-${index}`}
-                    className="group flex items-center gap-3 text-[#574830]/70"
-                  >
-                    <Icon
-                      size={30}
-                      aria-hidden="true"
-                      className="text-[#574830]/70 transition-colors duration-300 group-hover:text-[var(--tech-color)]"
-                      style={
-                        { "--tech-color": tech.color } as React.CSSProperties
-                      }
-                    />
-                    <span className="font-sans text-xs uppercase tracking-wider">
-                      {tech.name}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
+              {/* Left to Right */}
+              <div className="overflow-hidden">
+                <div className="flex w-max animate-[marquee-reverse_25s_linear_infinite] hover:[animation-play-state:paused]">
+                  {[...extraTechs, ...extraTechs].map((tech, index) => (
+                    <div
+                      key={`ltr-${tech.name}-${index}`}
+                      className="group flex shrink-0 items-center gap-3 px-6"
+                    >
+                      <img
+                        src={`/images/tech-stack/${tech.path}`}
+                        alt={tech.name}
+                        className="h-[30px] w-[30px] object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
+                      />
+                      <span className="font-sans text-xs uppercase tracking-wider text-[#574830]/70">
+                        {tech.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

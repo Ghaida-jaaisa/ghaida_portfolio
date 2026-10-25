@@ -39,7 +39,7 @@ export function HeroSection({ role, words }: HeroSectionProps) {
       </div>
       <HeroArt />
       <a
-        href="#work"
+        href="#path"
         className="absolute bottom-8 left-6 flex items-center gap-3 font-sans text-[10px] uppercase tracking-[0.2em] md:left-12"
       >
         <span className="flex size-8 items-center justify-center rounded-full border border-[#574830]">

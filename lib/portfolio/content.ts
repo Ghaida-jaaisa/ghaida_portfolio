@@ -7,7 +7,7 @@ export const portfolioContent: PortfolioContent = {
     email: 'ghaidajaaysah@gmail.com',
     role: 'Computer Systems Engineer · Software Engineer',
   },
-  navItems: ['path', 'work', 'skills', 'about'],
+  navItems: ['path', 'projects', 'skills', 'certificates', 'beliefs','contact'],
   heroWords: ['interfaces', 'experiences', 'ideas', 'solutions'],
  categories:[
   "All",

@@ -40,8 +40,8 @@ export default function Portfolio({ content }: PortfolioProps) {
         defaultTool={content.defaultTool}
         fallbackDescription={content.defaultToolDescription}
       />
-      
-      <ThinkingSection />
+
+      {/* <ThinkingSection /> */}
      
       <CertificatesSection certificates={content.certificates} />
       {/* <AboutSection name={owner.name} focus={content.currently} /> */}

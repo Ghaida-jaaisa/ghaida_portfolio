@@ -18,7 +18,7 @@ export function ContactFooter({
   return (
     <footer
       id="contact"
-      className="bg-[#434F03] px-6 py-28 text-[#F0E8CD] md:px-12 md:py-36"
+      className="bg-[#434F03] px-6 py-14 text-[#F0E8CD] md:px-12 md:py-28"
     >
       <div className="flex flex-col gap-20 md:flex-row md:items-end md:justify-between">
         <div>

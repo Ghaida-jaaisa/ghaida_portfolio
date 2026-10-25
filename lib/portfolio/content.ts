@@ -7,7 +7,7 @@ export const portfolioContent: PortfolioContent = {
     email: 'ghaidajaaysah@gmail.com',
     role: 'Computer Systems Engineer · Software Engineer',
   },
-  navItems: ['work', 'playground', 'path', 'about'],
+  navItems: ['path', 'work', 'skills', 'about'],
   heroWords: ['interfaces', 'experiences', 'ideas', 'solutions'],
  categories:[
   "All",
@@ -20,6 +20,7 @@ export const portfolioContent: PortfolioContent = {
 ],
 projects: [
   {
+    image: "/images/projects/themesolve.png",
     number: "01",
     title: "ThemeSolve",
     type: "AI × Education",
@@ -254,12 +255,13 @@ projects: [
   },
 ],
 qoutes: [
-    "Stay curious.",
+    "If the WHY  is powerful, the HOW is easy",
     "Progress over perfection.",
     "Mistakes are part of learning.",
-    "Understand, don't just memorize.",
     "Consistency beats motivation.",
-    "There is always more to learn.",
+    "Everything is learnable",
+    "Everyday is a new chance",
+    "NO PAIN, NO GAIN"
   ],
 
   path: [
@@ -404,5 +406,6 @@ qoutes: [
   socials: [
     { label: 'GitHub', href: 'https://github.com/ghaida-jaaisa' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ghaida-jaaisa/' },
+    { label: 'Gmail', href: 'mailto:ghaidajaaysah@gmail.com' },
   ],
 }

@@ -1,5 +1,6 @@
 
 export interface Project {
+  image?: string
   number: string
   title: string
   type: string
@@ -64,8 +65,10 @@ export type FocusItem = {
 }
 
 export type SocialLink = {
+  
   label: string
   href: string
+  // icon: string
 }
 
 export type PortfolioContent = {

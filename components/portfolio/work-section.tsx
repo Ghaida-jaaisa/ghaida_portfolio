@@ -11,7 +11,7 @@ type WorkSectionProps = {
 };
 
 export function WorkSection({ projects, categories }: WorkSectionProps) {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("Featured");
 
   const filteredProjects =
     activeCategory === "All"
@@ -62,33 +62,40 @@ export function WorkSection({ projects, categories }: WorkSectionProps) {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="group grid gap-7 border-b border-[#F0E8CD]/25 py-10 md:grid-cols-[5rem_1.2fr_1fr] md:items-center md:py-14">
-      <span className="font-sans text-xs text-[#987E29]">{project.number}</span>
-
-      <div>
-        <h2 className="font-serif text-3xl leading-none transition-transform duration-500 group-hover:translate-x-3 md:text-8xl">
-          {project.title}
-        </h2>
-        <p className="mt-5 max-w-md font-sans text-sm leading-relaxed text-[#F0E8CD]/65">
-          {project.text}
-        </p>
+    <article className="group grid gap-6 border-b border-[#F0E8CD]/25 py-8 md:grid-cols-2 md:items-center md:gap-12 md:py-12">
+      {/* Project Image */}
+      <div className="overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
 
-      <div>
+      {/* Project Details */}
+      <div className="flex flex-col items-center">
+        <h2 className="font-serif text-3xl leading-tight transition-transform duration-500 group-hover:translate-x-2 md:text-5xl">
+          {project.title}
+        </h2>
+
+        <p className="mt-4 max-w-lg font-sans text-sm leading-relaxed text-[#F0E8CD]/65 text-center ">
+          {project.text}
+        </p>
+
         <p
           className={cn(
-            "mb-5 inline-block rounded-full px-3 py-1 font-sans text-[10px] uppercase tracking-[0.15em] text-[#F0E8CD]",
+            "mt-6 inline-block rounded-full px-3 py-1 font-sans text-[10px] uppercase tracking-[0.15em] text-[#F0E8CD]",
             project.tone,
           )}
         >
           {project.award}
         </p>
 
-        <p className="font-sans text-xs uppercase tracking-[0.16em] text-[#987E29]">
+        <p className="mt-3 font-sans text-xs uppercase tracking-[0.16em] text-[#987E29]">
           {project.type} · {project.stack}
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-5 font-sans text-xs uppercase tracking-[0.18em]">
+        <div className="mt-6 flex flex-wrap gap-5 font-sans text-xs uppercase tracking-[0.18em]">
           {project.githubUrl && (
             <a
               href={project.githubUrl}

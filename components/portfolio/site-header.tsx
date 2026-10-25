@@ -13,8 +13,7 @@ export function SiteHeader({ brand, email, navItems }: SiteHeaderProps) {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-between px-6 py-6 mix-blend-multiply md:px-12">
-        <a href="#top" className="font-sans text-sm font-bold uppercase tracking-[0.22em]">
+<header className="fixed inset-x-0 top-0 z-30 flex items-center justify-between bg-[#6A4951] px-6 py-6 text-[#F0E8CD] md:px-12">        <a href="#top" className="font-sans text-sm font-bold uppercase tracking-[0.22em]">
           {brand}
           <span className="text-[#987E29]">.</span>
         </a>

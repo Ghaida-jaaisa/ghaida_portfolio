@@ -13,7 +13,7 @@ type CertificatesSectionProps = {
 export function CertificatesSection({ certificates }: CertificatesSectionProps) {
   return (
     <section id="certificates" className="overflow-hidden bg-[#6A4951] px-6 py-28 text-[#F0E8CD] md:py-36">
-      <SectionLabel index="06" className="mb-10 text-[#987E29]">Proof of curiosity</SectionLabel>
+      <SectionLabel index="05" className="mb-10 text-[#987E29]">Proof of curiosity</SectionLabel>
       <SectionTitle lines={["Things I've"]} emphasis="learned." className="text-6xl md:text-9xl" emphasisClassName="text-[#987E29]" />
       <div className="group/marquee -mx-6 mt-20 overflow-hidden py-6 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)] motion-reduce:overflow-x-auto">
         {/* The list is rendered twice and shifted by -50%, so the loop restarts on an identical frame. */}

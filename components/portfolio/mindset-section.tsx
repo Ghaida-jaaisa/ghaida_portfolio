@@ -28,7 +28,7 @@ export function MindsetSection() {
     >
       <div className="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:gap-20">
         <div>
-          <SectionLabel index="02" className="mb-5 text-[#6A4951]">
+          <SectionLabel index="01" className="mb-5 text-[#6A4951]">
             What Defines Me
           </SectionLabel>
 

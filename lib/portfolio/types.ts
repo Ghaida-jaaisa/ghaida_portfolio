@@ -79,13 +79,10 @@ export type PortfolioContent = {
   projects: Project[]
   path: PathEntry[]
   education: Education
-  playground: PlaygroundCard[]
-  thinkingSteps: string[]
   tools: Tool[]
   defaultTool: string
   defaultToolDescription: string
   certificates: Certificate[]
-  currently: FocusItem[]
   socials: SocialLink[]
-  qoutes: string[]
+  quotes: string[]
 }

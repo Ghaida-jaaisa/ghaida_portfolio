@@ -1,3 +1,4 @@
+import { SectionLabel } from "./primitives"
 
 type BeliefsSectionProps = {
   quotes: string[]
@@ -20,10 +21,10 @@ export function BeliefsSection({ quotes }: BeliefsSectionProps) {
       id="beliefs"
       className="beliefs-section relative isolate overflow-hidden border-y border-[#574830]/20 bg-[#F0E9DC] px-6 py-24 text-[#574830] md:py-32"
     >
+      
       <div className="relative z-10 mx-auto max-w-6xl">
-        <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#6A4951]">
-          A few things I believe in
-        </span>
+      <SectionLabel index="06" className="mb-10 font-sans text-xs uppercase tracking-[0.2em] text-[#6A4951]">A few things I believe in</SectionLabel>
+
 
         <h2 className="mt-5 max-w-2xl font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl">
           Words I carry

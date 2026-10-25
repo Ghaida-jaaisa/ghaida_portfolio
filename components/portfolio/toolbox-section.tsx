@@ -36,7 +36,7 @@ export function ToolboxSection({
 
   return (
     <section id="skills" className="px-6 py-28 md:px-24 md:py-36">
-      <SectionLabel index="05" className="mb-10 text-[#6A4951]">
+      <SectionLabel index="04" className="mb-10 text-[#6A4951]">
         My toolbox
       </SectionLabel>
       <div className="grid gap-12 md:grid-cols-[1fr_1.2fr]">
@@ -47,7 +47,7 @@ export function ToolboxSection({
           emphasisClassName="text-[#6A4951]"
         />
         <div>
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-2">
             {tools.map((tool) => (
               <button
                 key={tool.name}

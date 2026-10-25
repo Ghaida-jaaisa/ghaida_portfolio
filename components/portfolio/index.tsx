@@ -46,7 +46,7 @@ export default function Portfolio({ content }: PortfolioProps) {
       <CertificatesSection certificates={content.certificates} />
       {/* <AboutSection name={owner.name} focus={content.currently} /> */}
 
-      <BeliefsSection quotes={content.qoutes} />
+      <BeliefsSection quotes={content.quotes} />
       <ContactFooter
         email={owner.email}
         ownerName={owner.fullName}

@@ -254,7 +254,7 @@ projects: [
     demoUrl: "https://ghaida-jaaisa.github.io/GitHub-Profile-Viewer/",
   },
 ],
-qoutes: [
+quotes: [
     "If the WHY  is powerful, the HOW is easy",
     "Progress over perfection.",
     "Mistakes are part of learning.",
@@ -364,12 +364,6 @@ qoutes: [
     gpa: '3.61',
     description: 'Five years of engineering, software, systems, projects, deadlines, debugging, and learning how things work beneath the interface.',
   },
-  playground: [
-    { text: 'A button that feels like a door.', className: 'items-end bg-[#987E29] font-serif text-2xl italic hover:-rotate-2' },
-    { text: 'Hover to discover', className: 'items-center justify-center bg-[#6A4951] text-center font-sans text-xs uppercase tracking-[0.2em] text-[#F0E8CD] hover:rotate-2' },
-    { text: 'Good details matter.', className: 'items-end bg-[#574830] font-serif text-2xl text-[#F0E8CD] hover:-translate-y-2' },
-  ],
-  thinkingSteps: ['Problem', 'Understand', 'Break it down', 'Design', 'Build', 'Improve'],
   tools: [
     { name: 'HTML' },
     { name: 'CSS' },
@@ -397,11 +391,6 @@ qoutes: [
     { title: 'Git & Github', issuer: 'Microsoft Learn Student Ambassador', date: '2024', image: '/certificate/git.JPG' },
     // { title: 'Front End', issuer: 'EXALT', date: '2025', image: 'placeholder.jpg' },
     // { title: 'Datacamp', issuer: 'Gaza Sky Geeks', date: '2025', image: 'placeholder.jpg' },
-  ],
-  currently: [
-    { label: 'Building', value: 'New ideas' },
-    { label: 'Learning', value: 'TypeScript' },
-    { label: 'Exploring', value: 'Better systems' },
   ],
   socials: [
     { label: 'GitHub', href: 'https://github.com/ghaida-jaaisa' },

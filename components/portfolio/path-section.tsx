@@ -41,7 +41,7 @@ export function PathSection({ entries, education }: PathSectionProps) {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07] mix-blend-multiply" style={{ backgroundImage: grain }} />
 
       <div className="grid gap-10 md:grid-cols-[1fr_2fr] md:gap-16">
-        <SectionLabel index="03" className="font-semibold text-[#6A4951]">My path</SectionLabel>
+        <SectionLabel index="02" className="font-semibold text-[#6A4951]">My path</SectionLabel>
         <div>
           <SectionTitle lines={['My']} emphasis="path." className="text-6xl leading-[0.9] tracking-[-0.05em] md:text-9xl" emphasisClassName="text-[#6A4951]" />
           <p className="mt-8 max-w-md font-serif text-xl italic leading-snug text-[#574830] md:text-2xl">

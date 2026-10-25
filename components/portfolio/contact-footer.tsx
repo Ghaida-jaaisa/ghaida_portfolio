@@ -22,7 +22,7 @@ export function ContactFooter({
     >
       <div className="flex flex-col gap-20 md:flex-row md:items-end md:justify-between">
         <div>
-          <SectionLabel index="08" className="mb-8 text-[#987E29]">
+          <SectionLabel index="07" className="mb-8 text-[#987E29]">
             Contact
           </SectionLabel>
           <SectionTitle

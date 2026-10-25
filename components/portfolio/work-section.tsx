@@ -25,8 +25,8 @@ export function WorkSection({ projects, categories }: WorkSectionProps) {
       id="work"
       className="bg-[#434F03] px-6 py-28 text-[#F0E8CD] md:px-12 md:py-40"
     >
-      <div className="mb-10 flex items-end justify-between border-b border-[#F0E8CD]/25 pb-5">
-        <SectionLabel index="01" className="text-[#987E29]">
+      <div id="projects" className="mb-10 flex items-end justify-between border-b border-[#F0E8CD]/25 pb-5">
+        <SectionLabel index="03" className="text-[#987E29]">
           Selected work
         </SectionLabel>
         <p className="hidden font-serif text-lg italic opacity-70 sm:block">

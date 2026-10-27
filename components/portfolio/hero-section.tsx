@@ -51,17 +51,41 @@ export function HeroSection({ role, words }: HeroSectionProps) {
   );
 }
 
+
 function HeroArt() {
   return (
     <div
       aria-hidden="true"
-      className="absolute right-[8%] top-[23%] hidden size-64 md:block lg:size-80"
+      className="pointer-events-none absolute right-[2%] top-[18%] hidden h-[420px] w-[340px] md:block lg:right-[7%] lg:top-[12%] lg:h-[500px] lg:w-[400px]"
     >
-      <div className="absolute inset-10 rotate-12 border border-[#987E29]" />
-      <div className="absolute inset-14 -rotate-6 rounded-[48%_52%_60%_40%] bg-[#6A4951] opacity-90" />
-      <div className="absolute inset-20 rounded-[60%_40%_45%_55%] bg-[#987E29] mix-blend-multiply" />
-      <span className="absolute -bottom-8 left-0 font-serif text-3xl italic text-[#6A4951]">
-        make it feel good
+      {/* Soft background shape */}
+      <div className="absolute right-4 top-8 h-[85%] w-[85%] rotate-[-8deg] rounded-[48%_52%_40%_60%] bg-[#E5D9C2]/40" />
+
+      {/* Thin artistic frame */}
+      <div className="absolute right-0 top-2 h-[88%] w-[85%] rotate-[5deg] rounded-[48%_52%_45%_55%] border border-[#987E29]/50" />
+
+      {/* Portrait */}
+      <div className="absolute inset-x-5 bottom-5 top-5 overflow-hidden rounded-[48%_48%_8%_8%]">
+        <img
+          src="/images/ghaida.png"
+          alt=""
+          className="h-full w-full object-cover object-top transition-transform duration-700 hover:scale-[1.04]"
+        />
+
+        {/* Subtle image blending */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#434F03]/25 via-transparent to-[#F0E9DA]/10" />
+      </div>
+
+      {/* Decorative orbit */}
+      <div className="absolute -right-3 top-[22%] h-16 w-16 rounded-full border border-[#987E29]/60" />
+      <div className="absolute right-3 top-[27%] h-2 w-2 rounded-full bg-[#987E29]" />
+
+      {/* Small accent */}
+      <div className="absolute -left-1 top-[18%] h-3 w-3 rounded-full bg-[#6A4951]" />
+
+      {/* Bottom caption */}
+      <span className="absolute -bottom-2 left-0 font-serif text-sm italic tracking-wide text-[#6A4951]">
+       Brave woman strive to achieve her goals
       </span>
     </div>
   );

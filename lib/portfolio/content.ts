@@ -266,7 +266,21 @@ quotes: [
 
   path: [
     {
-      id: 'exalt',
+  id: '1',
+  organization: 'ABA Agency',
+  title: 'Full Stack Developer',
+  category: 'experience',
+  year: '2026',
+  description: [
+    'Developed a full-stack web application using React and Laravel, supporting over 100 users.',
+    'Built 3+ responsive interfaces with a focus on performance and search engine optimization (SEO).',
+    'Improved page loading times through lazy loading and code splitting.',
+    'Integrated RESTful APIs to enhance data flow and overall system efficiency.',
+  ],
+  tags: ['Full Stack', 'React', 'Laravel', 'REST APIs', 'SEO'],
+},
+    {
+      id: '2',
       organization: 'EXALT',
       title: 'Front-End Intern',
       category: 'experience',
@@ -276,10 +290,10 @@ quotes: [
         'Worked collaboratively on real-world projects within agile teams and experienced a professional development workflow.',
         'Improved problem-solving, debugging, and code quality through mentorship, collaboration, and peer code reviews.',
       ],
-      tags: ['Front-End', 'Agile', 'Code Review', 'Software Development'],
+      tags: ['Front-End', 'React', 'Next js', 'Software Development',],
     },
     {
-      id: 'datacamp',
+      id: '3',
       organization: 'DataCamp',
       title: 'DataCamp Program',
       category: 'program',
@@ -291,19 +305,7 @@ quotes: [
       tags: ['Python', 'SQL', 'R', 'Data Analysis'],
     },
     {
-      id: 'zakey-tech',
-      organization: 'Zakey Tech',
-      title: 'Deep Dive LLM Bootcamp',
-      category: 'program',
-      year: '2025',
-      description: [
-        'Learned the fundamentals of Large Language Models, including their architecture, training concepts, and applications.',
-        'Built and explored LLM-based applications such as chatbots, text generation, and sentiment analysis.',
-      ],
-      tags: ['LLMs', 'AI', 'NLP'],
-    },
-    {
-      id: 'udacity',
+      id: '4',
       organization: 'Udacity',
       title: 'AI Programming with Python & TensorFlow Nanodegree',
       category: 'program',
@@ -316,7 +318,22 @@ quotes: [
       tags: ['Python', 'TensorFlow', 'Deep Learning', 'Machine Learning'],
     },
     {
-      id: 'gsg-codecareer',
+  id: '5',
+  organization: 'Udacity',
+  title: 'Front End Web Developer Nanodegree',
+  category: 'program',
+  year: '2025',
+  description: [
+    'Built responsive and accessible web interfaces using HTML, CSS, SCSS, BEM, and modern JavaScript (ES6+).',
+    'Developed reusable React components with effective state management and integrated RESTful APIs using fetch and async/await.',
+    'Collaborated through Git and GitHub workflows, including branching and pull requests.',
+    'Implemented unit testing with Mocha and end-to-end testing with Cypress to improve application reliability.',
+    'Automated build processes and optimized assets using Gulp and Webpack.',
+  ],
+  tags: ['Frontend', 'JavaScript', 'REST APIs', 'Testing', 'Webpack'],
+},
+    {
+      id: '6',
       organization: 'Gaza Sky Geeks',
       title: 'CodeCareer Training',
       category: 'training',
@@ -325,7 +342,7 @@ quotes: [
       tags: ['JavaScript', 'React', 'APIs', 'ES6+'],
     },
     {
-      id: 'gsg-database-security',
+      id: '7',
       organization: 'Gaza Sky Geeks',
       title: 'Database Security Training',
       category: 'training',
@@ -337,7 +354,7 @@ quotes: [
       tags: ['Oracle', 'Database Security', 'OLS', 'DAC'],
     },
     {
-      id: 'prime-academy',
+      id: '8',
       organization: 'Prime Academy',
       title: 'Problem Solving Training',
       category: 'training',
@@ -347,7 +364,7 @@ quotes: [
       tagsLabel: 'Topics',
     },
     {
-      id: 'knowledge-academy',
+      id: '9',
       organization: 'Knowledge Academy',
       title: 'Front-End Training',
       category: 'training',
@@ -355,6 +372,20 @@ quotes: [
       description: ['Hands-on training in HTML, CSS, media queries, responsive layouts, and user-friendly web interfaces.'],
       tags: ['HTML', 'CSS', 'Responsive Design'],
     },
+    {
+  id: '10',
+  organization: 'Foothill Technology Solutions, LLC.',
+  title: 'Back-End Developer Intern',
+  category: 'experience',
+  year: '2026',
+  description: [
+    'Strengthened back-end development skills through structured, hands-on learning on Boot.dev.',
+    'Studied TypeScript, SQL, HTTP clients and servers, functional programming, and Git workflows.',
+    'Built practical projects, including an AI agent and a blog aggregator, applying back-end development concepts.',
+    'Gained foundational experience with Docker and containerization.',
+  ],
+  tags: ['Back-End', 'TypeScript', 'SQL', 'HTTP', 'Git', 'Docker', 'AI Agents'],
+},
   ],
   education: {
     school: 'Arab American University',

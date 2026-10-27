@@ -1,3 +1,4 @@
+import { features } from 'process'
 import type { PortfolioContent } from './types'
 
 export const portfolioContent: PortfolioContent = {
@@ -20,7 +21,7 @@ export const portfolioContent: PortfolioContent = {
 ],
 projects: [
   {
-    image: "/images/projects/themesolve.png",
+    image: "/images/projects/themesolve.jpeg",
     number: "01",
     title: "ThemeSolve",
     type: "AI × Education",
@@ -29,22 +30,23 @@ projects: [
     stack: "React · AI · UX Research",
     tone: "bg-[#6A4951]",
     category: "Featured",
-    featured: true,
+    featured: false,
     githubUrl: "https://github.com/Ghaida-jaaisa/personalized-math-rewriting",
     demoUrl: "https://personalized-math-rewriting.vercel.app/",
   },
   {
     number: "02",
-    title: "Classroom Intelligence",
+    title: "Raqeeb Edu Ai",
     type: "AI × Computer Vision",
     award: "Graduation Project",
     text: "An AI-powered classroom monitoring system designed to analyze student attention and classroom engagement.",
     stack: "YOLOv8 · OpenCV · Firebase · Flutter",
     tone: "bg-[#574830]",
     category: "AI & Systems",
-    featured: true,
+    featured: false,
     githubUrl: "",
     demoUrl: "",
+    image:"images/projects/raqeebEdu.jpeg"
   },
   {
     number: "03",
@@ -55,9 +57,10 @@ projects: [
     stack: "Laravel · PHP · REST APIs · MySQL",
     tone: "bg-[#434F03]",
     category: "Full-Stack",
-    featured: true,
+    featured: false,
     githubUrl: "",
     demoUrl: "",
+    image:"/images/projects/amazon-qoyod.jpeg"
   },
   {
     number: "04",
@@ -67,11 +70,13 @@ projects: [
     text: "An educational web application built to support digital learning through an interactive web experience.",
     stack: "React · Web Development",
     tone: "bg-[#6A4951]",
-    category: "Web",
-    featured: true,
+    category: "Experiments",
+    featured: false,
     githubUrl: "https://github.com/ghaida-jaaisa/soar",
     demoUrl: "http://soar2024.runasp.net",
+    image:"images/projects/soar.png"
   },
+
   {
     number: "05",
     title: "HealthPlus",
@@ -84,6 +89,7 @@ projects: [
     featured: true,
     githubUrl: "",
     demoUrl: "https://apex.oracle.com/pls/apex/r/database_programing_project/pharmacy-management-system/",
+    image: "images/projects/healthplus.png"
   },
   {
     number: "06",
@@ -96,6 +102,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/Ghaida-jaaisa/SmartATMSystem",
     demoUrl: "https://smart-atm-system.netlify.app/",
+    image: "images/projects/smartatmsystem.png"
   },
   {
     number: "07",
@@ -108,6 +115,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/Ghaida-jaaisa/product-builder-reactjs",
     demoUrl: "https://product-builder-reactjs.netlify.app/",
+    image: "images/projects/product_builder.png"
   },
   {
     number: "08",
@@ -120,6 +128,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/Ghaida-jaaisa/vs-clone",
     demoUrl: "https://vs-clone-redux.netlify.app/",
+    image: "images/projects/vs-clone.png"
   },
   {
     number: "09",
@@ -132,6 +141,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/Ghaida-jaaisa/github-profile-viewer-react",
     demoUrl: "https://github-profile-viewer-react1.netlify.app/",
+    image: "images/projects/github-profile-viewer-react.png"
   },
   {
     number: "10",
@@ -144,6 +154,7 @@ projects: [
     category: "Mobile",
     githubUrl: "https://github.com/ghaida-jaaisa/jawed-ai",
     demoUrl: "https://jawed-ai.vercel.app/#/HomePage",
+    image: "images/projects/jawed.jpeg"
   },
   {
     number: "11",
@@ -156,6 +167,8 @@ projects: [
     category: "Mobile",
     githubUrl: "https://github.com/ghaida-jaaisa/traveling_app",
     demoUrl: "https://traveling-app-inky.vercel.app/",
+    featured: false,
+    image: "images/projects/travel.png"
   },
   {
     number: "12",
@@ -168,6 +181,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/ghaida-jaaisa/online-learning-platform",
     demoUrl: "https://ghaida-jaaisa.github.io/Online-learning-platform/",
+    image: "images/projects/learning-platform.png"
   },
   {
     number: "13",
@@ -178,8 +192,10 @@ projects: [
     stack: "JavaScript · APIs · CSS",
     tone: "bg-[#6A4951]",
     category: "Web",
+    featured: true,
     githubUrl: "https://github.com/Ghaida-jaaisa/Prayer-Times-Web-App",
     demoUrl: "https://ghaida-jaaisa.github.io/Prayer-Times-Web-App/",
+    image: "images/projects/prayertimes.png"
   },
   {
     number: "14",
@@ -192,6 +208,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/ghaida-jaaisa/mangcoding-store",
     demoUrl: "https://ghaida-jaaisa.github.io/mangcoding-Store/",
+    image:"images/projects/mangcoding.png"
   },
   {
     number: "15",
@@ -204,6 +221,7 @@ projects: [
     category: "Web",
     githubUrl: "https://github.com/ghaida-jaaisa/dalouna_restaurant",
     demoUrl: "https://ghaida-jaaisa.github.io/dalouna_restaurant/",
+    image: "images/projects/dalouna_restaurant.png"
   },
   {
     number: "16",
@@ -216,6 +234,7 @@ projects: [
     category: "Experiments",
     githubUrl: "https://github.com/Ghaida-jaaisa/Passenger-Counter",
     demoUrl: "https://passengercounter111.netlify.app/",
+    image: "images/projects/passenger-counter.png"
   },
   {
     number: "17",
@@ -228,6 +247,7 @@ projects: [
     category: "Experiments",
     githubUrl: "https://github.com/Ghaida-jaaisa/Blackjack-game",
     demoUrl: "https://blackjackgame111.netlify.app/",
+    image: "images/projects/blackjack.png"
   },
   {
     number: "18",
@@ -240,19 +260,23 @@ projects: [
     category: "Experiments",
     githubUrl: "https://github.com/ghaida-jaaisa/todo-app-dom-events",
     demoUrl: "https://ghaida-jaaisa.github.io/todo-app-dom-events/",
+    image: "images/projects/todo-list.png"
   },
   {
-    number: "19",
-    title: "GitHub Profile Viewer",
-    type: "API Experiment",
-    award: "Vanilla JavaScript Edition",
-    text: "An early GitHub profile viewer exploring API integration and dynamic rendering without a React-based interface.",
-    stack: "JavaScript · REST API · HTML · CSS",
-    tone: "bg-[#6A4951]",
-    category: "Experiments",
-    githubUrl: "https://github.com/ghaida-jaaisa/github-profile-viewer",
-    demoUrl: "https://ghaida-jaaisa.github.io/GitHub-Profile-Viewer/",
-  },
+  number: "19",
+  title: "SkillSwap",
+  type: "Skill Exchange Platform",
+  award: "Full-Stack Web Application",
+  text: "A web platform that enables users to exchange skills and knowledge without monetary transactions, featuring user profiles, skill matching, messaging, and an admin dashboard.",
+  stack: "React · TypeScript · TanStack Query · Tailwind CSS · MUI · Zustand · Axios",
+  tone: "bg-[#987E29]",
+  category: "Web Applications",
+  featured: true,
+  githubUrl: "https://github.com/skill-swap-platform/skill-swap",
+  demoUrl: "https://skill-swap-ldp3.onrender.com/",
+  image: "images/projects/skill-swap.png",
+}
+  
 ],
 quotes: [
     "If the WHY  is powerful, the HOW is easy",

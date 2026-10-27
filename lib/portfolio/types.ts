@@ -1,6 +1,6 @@
 
 export interface Project {
-  image?: string
+  image: string
   number: string
   title: string
   type: string

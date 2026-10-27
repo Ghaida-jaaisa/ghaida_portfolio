@@ -419,7 +419,7 @@ function EducationBlock({ education }: { education: Education }) {
         </div>
 
         <div>
-          <p className="font-serif text-5xl leading-[0.95] tracking-[-0.04em] md:text-8xl">
+          <p className="font-serif text-3xl leading-[0.95] tracking-[-0.04em] md:text-5xl">
             {education.degree}
           </p>
 

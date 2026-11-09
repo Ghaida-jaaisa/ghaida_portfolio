@@ -444,6 +444,7 @@ quotes: [
     { title: 'Job Ready English', issuer: 'Gaza Sky Geeks', date: '2025', image: '/certificate/jobReadyEnglish.jpg' },
     { title: 'Front End Development', issuer: 'Knowledge Academy', date: '2024', image: '/certificate/front-knowledge.jpeg' },
     { title: 'Git & Github', issuer: 'Microsoft Learn Student Ambassador', date: '2024', image: '/certificate/git.JPG' },
+    { title: 'Software Development Training Program', issuer: 'Foothill Technology Solutions', date: '2026', image: '/certificate/bootdev.JPG' },
     // { title: 'Front End', issuer: 'EXALT', date: '2025', image: 'placeholder.jpg' },
     // { title: 'Datacamp', issuer: 'Gaza Sky Geeks', date: '2025', image: 'placeholder.jpg' },
   ],
